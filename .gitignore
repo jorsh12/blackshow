@@ -1,0 +1,4 @@
+.DS_Store
+app/resources/tmp/cache
+app/webroot/img/uploads
+libraries

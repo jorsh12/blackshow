@@ -1,0 +1,76 @@
+app\models\AuditableEntity:
+    type: mappedSuperclass
+    gedmo:
+        loggable:
+            logEntryClass: app\models\LogEntry
+        # soft_deleteable:
+        #     field_name: deletedAt
+        #     time_aware: false
+    fields:
+        version:
+            version: true
+            type: integer
+            nullable: false
+            comment: ''
+            column: VERSION
+        createdAt:
+            type: datetime
+            nullable: false
+            comment: ''
+            column: CREATED_AT
+            gedmo:
+                timestampable:
+                    on: create
+        createdFromIp:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+            comment: ''
+            column: CREATED_IP
+            gedmo:
+                ipTraceable:
+                    on: create
+        updatedAt:
+            type: datetime
+            nullable: false
+            comment: ''
+            column: UPDATED_AT
+            gedmo:
+                timestampable:
+                    on: update
+        updatedFromIp:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+            comment: ''
+            column: UPDATED_IP
+            gedmo:
+                ipTraceable:
+                    on: update
+        # deletedAt:
+        #     type: datetime
+        #     nullable: true
+        #     comment: ''
+        #     column: DELETED_AT
+    manyToOne:
+        createdBy:
+            targetEntity: app\models\AuthUser
+            gedmo:
+                blameable:
+                    on: create
+            joinColumn:
+                name: CREATED_BY
+                referencedColumnName: ID
+                nullable: false
+        updatedBy:
+            targetEntity: app\models\AuthUser
+            gedmo:
+                blameable:
+                    on: update
+            joinColumn:
+                name: UPDATED_BY
+                referencedColumnName: ID
+                nullable: false
+    lifecycleCallbacks: {  }

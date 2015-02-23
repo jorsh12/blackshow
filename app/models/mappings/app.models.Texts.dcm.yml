@@ -1,0 +1,47 @@
+app\models\Texts:
+    type: entity
+    table: texts
+    repositoryClass: app\models\repositories\TextsRepository
+    # gedmo:
+    #     translation:
+    #         locale: locale
+    #         # using specific personal translation class:
+    #         entity: TranslationTextosEntity
+    uniqueConstraints:
+        UNIQUE_CONTENT:
+            columns: [ PAGE, LANGUAGE ]
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: ID
+            generator:
+                strategy: AUTO
+    fields:
+        page:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            comment: ''
+            column: PAGE
+        content:
+            type: string
+            length: 900
+            fixed: false
+            nullable: false
+            comment: ''
+            column: CONTENT
+            gedmo:
+                - translatable
+        language:
+            type: string
+            length: 30
+            fixed: false
+            nullable: false
+            comment: ''
+            column: LANGUAGE
+    lifecycleCallbacks: {  }

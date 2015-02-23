@@ -1,0 +1,22 @@
+{
+  "name": "blackshadow_app",
+  "description": "",
+
+  "config": {
+    "vendor-dir": "libraries"
+  },
+
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "dev-master",
+    "unionofrad/lithium": "dev-master",
+    "symfony/var-dumper": "~2.6",
+    "michaelhue/li3_flash_message": "dev-master",
+    "tmaiaroto/li3_access": "dev-master",
+    "doctrine/orm": "2.4.*@dev",
+    "symfony/yaml": "2.*",
+    "gedmo/doctrine-extensions": "2.3.*@dev",
+    "djordje/li3_swiftmailer": "dev-master",
+    "swiftmailer/swiftmailer": "dev-master"
+  }
+}

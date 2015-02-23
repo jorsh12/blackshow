@@ -1,0 +1,77 @@
+app\models\SoftAuditableEntity:
+    type: mappedSuperclass
+    gedmo:
+        loggable:
+            logEntryClass: app\models\LogEntry
+        soft_deleteable:
+            field_name: deletedAt
+            time_aware: false
+    fields:
+        version:
+            version: true
+            type: integer
+            nullable: false
+            comment: ''
+            column: VERSION
+        createdAt:
+            type: datetime
+            nullable: false
+            comment: ''
+            column: CREATED_AT
+            gedmo:
+                timestampable:
+                    on: create
+        createdBy:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            comment: ''
+            column: CREATED_BY
+            gedmo:
+                blameable:
+                    on: create
+        createdFromIp:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+            comment: ''
+            column: CREATED_IP
+            gedmo:
+                ipTraceable:
+                    on: create
+        updatedAt:
+            type: datetime
+            nullable: false
+            comment: ''
+            column: UPDATED_AT
+            gedmo:
+                timestampable:
+                    on: update
+        updatedBy:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            comment: ''
+            column: UPDATED_BY
+            gedmo:
+                blameable:
+                    on: update
+        updatedFromIp:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+            comment: ''
+            column: UPDATED_IP
+            gedmo:
+                ipTraceable:
+                    on: update
+        deletedAt:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: DELETED_AT
+    lifecycleCallbacks: {  }

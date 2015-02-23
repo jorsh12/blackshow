@@ -1,0 +1,57 @@
+app\models\CorporateImages:
+    type: entity
+    table: corporate_images
+    repositoryClass: app\models\repositories\CorporateImagesRepository
+    # gedmo:
+    #     uploadable:
+    #         allowOverwrite: false
+    #         appendNumber: true
+    #         maxSize: 5000000 # 5mb
+    #         filenameGenerator: SHA1
+    #         #callback: callback
+    id:
+        id:        
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: ID
+            generator:
+                strategy: AUTO
+    # fields:
+    #     path:
+    #         type: string
+    #         length: 300
+    #         fixed: false
+    #         nullable: false
+    #         comment: ''
+    #         column: PATH
+    #         gedmo:
+    #             - uploadableFilePath
+    #     name:
+    #         type: string
+    #         length: 90
+    #         fixed: false
+    #         nullable: false
+    #         comment: ''
+    #         column: NAME
+    #         gedmo:
+    #             - uploadableFileName
+    #     mimeType:
+    #         type: string
+    #         length: 75
+    #         fixed: false
+    #         nullable: false
+    #         comment: ''
+    #         column: MIME_TYPE
+    #         gedmo:
+    #             - uploadableFileMimeType
+    #     size:
+    #         type: decimal
+    #         nullable: false
+    #         comment: ''
+    #         column: SIZE
+    #         gedmo:
+    #             - uploadableFileSize
+    lifecycleCallbacks: {  }

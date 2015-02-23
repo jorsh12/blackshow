@@ -1,0 +1,75 @@
+app\models\AuthUser:
+    type: mappedSuperclass
+    gedmo:
+        loggable:
+            logEntryClass: app\models\LogEntry
+    indexes:
+        USERS_LAST_LOGIN:
+            columns: [ LAST_LOGIN ]
+        USERS_LOGIN:
+            columns: [ EMAIL, EMAIL_VERIFIED, ACTIVE ]
+    uniqueConstraints:
+        UNIQUE_USERS_EMAIL:
+            columns: [ EMAIL ]
+        UNIQUE_USERS_TOKEN:
+            columns: [ TOKEN ]
+    repositoryClass: app\models\repositories\AuthUserRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: ID
+            generator:
+                strategy: AUTO
+    fields:
+        email:
+            type: string
+            nullable: false
+            length: 100
+            fixed: false
+            comment: ''
+            column: EMAIL
+            gedmo:
+                - versioned
+        password:
+            type: string
+            nullable: false
+            length: 64
+            fixed: false
+            comment: ''
+            column: PASSWORD
+        emailVerified:
+            type: boolean
+            nullable: false
+            comment: ''
+            column: EMAIL_VERIFIED
+            gedmo:
+                - versioned
+        lastLogin:
+            type: datetime
+            nullable: true
+            comment: ''
+            column: LAST_LOGIN
+        token:
+            type: string
+            nullable: true
+            length: 100
+            fixed: false
+            comment: ''
+            column: TOKEN
+        mustChangePassword:
+            type: boolean
+            nullable: false
+            comment: ''
+            column: MUST_CHANGE_PASSWORD
+        active:
+            type: boolean
+            nullable: false
+            comment: ''
+            column: ACTIVE
+            gedmo:
+                - versioned
+    lifecycleCallbacks: {  }

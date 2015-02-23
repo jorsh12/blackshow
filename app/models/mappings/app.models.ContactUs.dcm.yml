@@ -1,0 +1,58 @@
+app\models\ContactUs:
+    type: entity
+    table: contact_us
+    repositoryClass: app\models\repositories\ContactUsRepository
+    id:
+        id:        
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: ID
+            generator:
+                strategy: AUTO
+    fields:
+        category:
+            type: string
+            length: 30
+            fixed: false
+            nullable: false
+            comment: ''
+            column: CATEGORY
+        name:
+            type: string
+            length: 150
+            fixed: false
+            nullable: false
+            comment: ''
+            column: NAME
+        city:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            comment: ''
+            column: CITY
+        fhone:
+            type: string
+            length: 40
+            fixed: false
+            nullable: false
+            comment: ''
+            column: FHONE
+        email:
+            type: string
+            length: 90
+            fixed: false
+            nullable: false
+            comment: ''
+            column: EMAIL
+        comments:
+            type: string
+            length: 500
+            fixed: false
+            nullable: false
+            comment: ''
+            column: COMMENTS
+    lifecycleCallbacks: {  }

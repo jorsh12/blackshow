@@ -1,0 +1,79 @@
+app\models\LogEntry:
+    type: entity
+    table: log_entries
+    repositoryClass: app\models\repositories\LogEntryRepository
+    indexes:
+        LOG_CLASS_IDX:
+            columns: [ OBJECT_CLASS ]
+        LOG_DATE_IDX:
+            columns: [ LOGGED_AT ]
+        LOG_USERNAME_IDX:
+            columns: [ USERNAME ]
+        LOG_IP_IDX:
+            columns: [ FROM_IP ]
+        LOG_VERSION_IDX:
+            columns: [ OBJECT_ID, OBJECT_CLASS, VERSION ]
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: ''
+            id: true
+            column: ID
+            generator:
+                strategy: AUTO
+    fields:
+        action:
+            type: string
+            length: 10
+            fixed: false
+            nullable: false
+            comment: ''
+            column: ACTION
+        loggedAt:
+            type: datetime
+            nullable: false
+            comment: ''
+            column: LOGGED_AT
+        objectId:
+            type: string
+            length: 64
+            fixed: false
+            nullable: true
+            comment: ''
+            column: OBJECT_ID
+        objectClass:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            comment: ''
+            column: OBJECT_CLASS
+        version:
+            type: integer
+            nullable: false
+            comment: ''
+            column: VERSION
+        data:
+            type: json_array
+            nullable: true
+            column: DATA
+        username:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            comment: ''
+            column: USERNAME
+        fromIp:
+            type: string
+            length: 45
+            fixed: false
+            nullable: false
+            comment: ''
+            column: FROM_IP
+            gedmo:
+                ipTraceable:
+                    on: create
+    lifecycleCallbacks: {  }

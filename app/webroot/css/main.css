@@ -1,0 +1,297 @@
+
+/*For application in General*/
+html, body {
+	background: rgb(15,36,62);
+	color:#FFFFFF;
+}
+
+.login {
+	color:#FFFFFF;
+}
+
+.login fieldset legend{
+	color:#FFFFFF;
+}
+
+.image-fondo {
+	background-image: url("/blackshow/app/webroot/img/fondo_BlackShow.jpg");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.slider {
+	width:100%;
+	border:1px solid #CCCCCC;
+	overflow:auto;
+}
+
+.image-right {
+	overflow:auto;
+}
+
+.image-right img {
+	width:100%;
+	height:100%;
+}
+
+.image-logo {
+	overflow:auto;
+	position:absolute;
+	margin-top:-50px;
+}
+
+.image-logo img {
+	width:100%;
+	height:100%;
+}
+
+.delete-image {
+	position:absolute;
+	right: 0;
+	color: #FFFFFF;
+}
+
+.container-texto-right {
+    overflow:auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.texto-abajo-right {
+	color: black;
+	background:#FFFFFF;
+	border:1px solid #CCCCCC;
+	padding: 10px 10px 10px 10px;
+}
+
+.container-texto-right-completo {
+    height:auto;
+    overflow:auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.image-home img {
+ 	width: 100%;
+ 	height: 80px;
+ 	display: block;
+ }
+
+.image-home-iluminacion {
+	margin-top:-5%;
+}
+
+.image-home-logo img {
+	width:100%;
+	height:100%;
+}
+
+.upload-file, .logout {
+	color:#FFFFFF;
+}
+
+.upload-file fieldset legend {
+	color:#FFFFFF;	
+}
+
+
+
+
+/*For small devices like CellPhone*/
+@media only screen and (min-device-width : 360px) and (max-device-width : 650px){
+
+	.container-texto-right, .container-texto-right-completo, .texto-abajo-right, .upload-file, .clock {
+		font-size: 7px;
+	}
+
+	.image-home {
+		font-size:8px;
+	}
+
+	.image-home img {
+	 	width: 100%;
+	 	height: 60px;
+	 	display: block;
+	 }
+
+	#change-language {
+		font-size: 10px;
+	}
+
+	h3 {
+		font-size:15px;
+	}
+
+	.image-logo {		
+		margin-top:-20px;
+	}
+
+}
+
+
+/*For medium devices like IPAD*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+
+	.navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>ul {
+		display:block!important;
+		background: black;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+
+	.image-logo {		
+		margin-top:-40px;
+	}
+
+}
+
+
+
+/* 
+	Custom Bar para Bootstrap url = http://twitterbootstrap3navbars.w3masters.nl/ 
+*/
+.navbar-custom {
+  background-color: #0d3e57;
+  border-color: #09293a;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#145e83), to(#0d3e57));
+  background-image: -webkit-linear-gradient(top, #145e83, 0%, #0d3e57, 100%);
+  background-image: -moz-linear-gradient(top, #145e83 0%, #0d3e57 100%);
+  background-image: linear-gradient(to bottom, #145e83 0%, #0d3e57 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff145e83', endColorstr='#ff0d3e57', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #e6e6e6;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #09293a;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+  border-left: 1px solid #09293a;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #fffefe;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #fffefe;
+  background-color: #09293a;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#09293a), to(#0f4967));
+  background-image: -webkit-linear-gradient(top, #09293a, 0%, #0f4967, 100%);
+  background-image: -moz-linear-gradient(top, #09293a 0%, #0f4967 100%);
+  background-image: linear-gradient(to bottom, #09293a 0%, #0f4967 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff09293a', endColorstr='#ff0f4967', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {	
+  	border-color: #082838;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #fffefe;
+  border-bottom-color: #fffefe;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #09293a;
+  color: #fffefe;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #fffefe;
+  border-bottom-color: #fffefe;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fffefe;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fffefe;
+    background-color: #09293a;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #ffffff;
+}
+.navbar-custom .navbar-link:hover {
+  color: #fffefe;
+}

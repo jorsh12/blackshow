@@ -1,0 +1,33 @@
+app\models\Users:
+    type: entity
+    table: users
+    repositoryClass: app\models\repositories\UsersRepository
+    fields:
+        nombre:
+            type: string
+            length: 150
+            fixed: false
+            nullable: false
+            comment: ''
+            column: NOMBRE
+            gedmo:
+                - versioned
+        apellidoPaterno:
+            type: string
+            length: 150
+            fixed: false
+            nullable: false
+            comment: ''
+            column: APELLIDO_PATERNO
+            gedmo:
+                - versioned
+        apellidoMaterno:
+            type: string
+            length: 150
+            fixed: false
+            nullable: false
+            comment: ''
+            column: APELLIDO_MATERNO
+            gedmo:
+                - versioned
+    lifecycleCallbacks: {  }

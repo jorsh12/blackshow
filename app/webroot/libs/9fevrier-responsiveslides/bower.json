@@ -1,0 +1,14 @@
+{
+  "name": "9fevrier-responsiveslides",
+  "version": "1.5.4",
+  "main": "responsiveslides",
+  "ignore": [
+
+  ],
+  "dependencies": {
+    "jquery": ">= 1.7.1"
+  },
+  "devDependencies": {
+    
+  }
+}

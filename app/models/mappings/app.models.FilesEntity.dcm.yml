@@ -1,0 +1,52 @@
+app\models\FilesEntity:
+    type: mappedSuperclass
+    gedmo:
+        uploadable:
+            allowOverwrite: false
+            appendNumber: true
+            maxSize: 5000000 # 5mb
+            filenameGenerator: SHA1
+            #callback: callback
+    fields:
+        path:
+            type: string
+            length: 300
+            fixed: false
+            nullable: false
+            comment: ''
+            column: PATH
+            gedmo:
+                - uploadableFilePath
+        name:
+            type: string
+            length: 90
+            fixed: false
+            nullable: false
+            comment: ''
+            column: NAME
+            gedmo:
+                - uploadableFileName
+        mimeType:
+            type: string
+            length: 75
+            fixed: false
+            nullable: false
+            comment: ''
+            column: MIME_TYPE
+            gedmo:
+                - uploadableFileMimeType
+        size:
+            type: decimal
+            nullable: false
+            comment: ''
+            column: SIZE
+            gedmo:
+                - uploadableFileSize
+        # descripcion:
+        #     type: string
+        #     length: 100
+        #     fixed: false
+        #     nullable: true
+        #     comment: ''
+        #     column: DESCRIPCION
+    lifecycleCallbacks: {  }

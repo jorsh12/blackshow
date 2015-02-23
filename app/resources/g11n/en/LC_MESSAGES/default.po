@@ -1,0 +1,206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-02-16 17:57-0600\n"
+"PO-Revision-Date: 2015-02-16 17:57-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: t\n"
+"X-Poedit-SearchPath-0: C:\\wamp\\www\\blackshow\\app\\views\n"
+
+#: C:\wamp\www\blackshow\app\views/accounts/login.html.php:13
+#: C:\wamp\www\blackshow\app\views/elements/menu.html.php:70
+msgid "Inicio"
+msgstr "Home"
+
+#: C:\wamp\www\blackshow\app\views/accounts/login.html.php:26
+msgid "Acceso a usuarios"
+msgstr "User access"
+
+#: C:\wamp\www\blackshow\app\views/accounts/login.html.php:33
+msgid "Ingresar"
+msgstr "Login"
+
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:9
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:10
+msgid "Categoría"
+msgstr "Category"
+
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:13
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:14
+msgid "Nombre Completo"
+msgstr "Name"
+
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:17
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:18
+msgid "Ciudad"
+msgstr "City"
+
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:21
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:22
+msgid "Teléfono"
+msgstr "Phone"
+
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:25
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:26
+msgid "Correo Electrónico"
+msgstr "Email"
+
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:29
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:30
+msgid "Comentarios"
+msgstr "Comments"
+
+#: C:\wamp\www\blackshow\app\views/contact_us/add.html.php:32
+#: C:\wamp\www\blackshow\app\views/corporate_images/add.html.php:20
+#: C:\wamp\www\blackshow\app\views/elements/texto_right.html.php:28
+#: C:\wamp\www\blackshow\app\views/events_images/add.html.php:20
+#: C:\wamp\www\blackshow\app\views/several_images/add.html.php:20
+#: C:\wamp\www\blackshow\app\views/theatres_images/add.html.php:20
+msgid "Guardar"
+msgstr "Save"
+
+#: C:\wamp\www\blackshow\app\views/corporate_images/add.html.php:3
+msgid "Subir Archivo de Corporativo"
+msgstr "Upload File Coporate"
+
+#: C:\wamp\www\blackshow\app\views/corporate_images/add.html.php:10
+#: C:\wamp\www\blackshow\app\views/corporate_images/view.html.php:4
+#: C:\wamp\www\blackshow\app\views/elements/modulos_iluminacion.html.php:28
+#: C:\wamp\www\blackshow\app\views/pages/lighting.html.php:47
+msgid "Corporativo"
+msgstr "Corporate"
+
+#: C:\wamp\www\blackshow\app\views/corporate_images/add.html.php:13
+#: C:\wamp\www\blackshow\app\views/events_images/add.html.php:13
+#: C:\wamp\www\blackshow\app\views/several_images/add.html.php:13
+#: C:\wamp\www\blackshow\app\views/theatres_images/add.html.php:13
+msgid "Archivo"
+msgstr "File"
+
+#: C:\wamp\www\blackshow\app\views/corporate_images/add.html.php:17
+#: C:\wamp\www\blackshow\app\views/events_images/add.html.php:17
+#: C:\wamp\www\blackshow\app\views/several_images/add.html.php:17
+#: C:\wamp\www\blackshow\app\views/theatres_images/add.html.php:17
+msgid "Descripción"
+msgstr "Descriptión"
+
+#: C:\wamp\www\blackshow\app\views/elements/change_color.html.php:6
+msgid "Azul"
+msgstr "Blue"
+
+#: C:\wamp\www\blackshow\app\views/elements/change_color.html.php:6
+msgid "Rosa"
+msgstr "Pink"
+
+#: C:\wamp\www\blackshow\app\views/elements/change_color.html.php:6
+msgid "Azul Celeste"
+msgstr "Blue Light"
+
+#: C:\wamp\www\blackshow\app\views/elements/layout_modulos.html.php:15
+msgid "Proveedores"
+msgstr "Providers"
+
+#: C:\wamp\www\blackshow\app\views/elements/layout_modulos.html.php:17
+msgid ""
+"Contamos con una gran variedad de equipos de audio, iluminación, efectos "
+"especiales y videoproyección, de las marcas profesionales más reconocidas."
+msgstr ""
+"Besides working with only professional brands, our technical department is "
+"always willing to help you with the production of a successful event."
+
+#: C:\wamp\www\blackshow\app\views/elements/menu.html.php:22
+#: C:\wamp\www\blackshow\app\views/pages/home.html.php:7
+msgid "Nosotros"
+msgstr "Our Company"
+
+#: C:\wamp\www\blackshow\app\views/elements/menu.html.php:30
+#: C:\wamp\www\blackshow\app\views/pages/home.html.php:19
+msgid "Audio"
+msgstr "Audio"
+
+#: C:\wamp\www\blackshow\app\views/elements/menu.html.php:38
+#: C:\wamp\www\blackshow\app\views/pages/home.html.php:31
+msgid "Iluminación"
+msgstr "Lighting"
+
+#: C:\wamp\www\blackshow\app\views/elements/menu.html.php:46
+#: C:\wamp\www\blackshow\app\views/pages/home.html.php:43
+msgid "Video"
+msgstr "Video"
+
+#: C:\wamp\www\blackshow\app\views/elements/menu.html.php:54
+#: C:\wamp\www\blackshow\app\views/pages/home.html.php:55
+msgid "Reparación y Mantenimiento"
+msgstr "Repair and Maintence"
+
+#: C:\wamp\www\blackshow\app\views/elements/menu.html.php:62
+msgid "Contacto"
+msgstr "Contact us"
+
+#: C:\wamp\www\blackshow\app\views/elements/menu_otras_acciones.html.php:7
+msgid "Acceso"
+msgstr "Login"
+
+#: C:\wamp\www\blackshow\app\views/elements/menu_otras_acciones.html.php:16
+msgid "Salir"
+msgstr "Logout"
+
+#: C:\wamp\www\blackshow\app\views/elements/modulos_iluminacion.html.php:8
+#: C:\wamp\www\blackshow\app\views/pages/lighting.html.php:31
+msgid "Eventos Sociales"
+msgstr "Social Events"
+
+#: C:\wamp\www\blackshow\app\views/elements/modulos_iluminacion.html.php:18
+#: C:\wamp\www\blackshow\app\views/pages/lighting.html.php:39
+msgid "Teatros y Festivales"
+msgstr "Thatres & Festivals"
+
+#: C:\wamp\www\blackshow\app\views/elements/modulos_iluminacion.html.php:38
+#: C:\wamp\www\blackshow\app\views/pages/lighting.html.php:55
+#: C:\wamp\www\blackshow\app\views/several_images/add.html.php:10
+#: C:\wamp\www\blackshow\app\views/several_images/view.html.php:4
+msgid "Varios"
+msgstr "Others"
+
+#: C:\wamp\www\blackshow\app\views/elements/modulos_iluminacion.html.php:51
+#: C:\wamp\www\blackshow\app\views/pages/lighting.html.php:10
+msgid "Borrar"
+msgstr "Delete"
+
+#: C:\wamp\www\blackshow\app\views/elements/modulos_iluminacion.html.php:70
+msgid "Subir Archivo"
+msgstr "Upload File"
+
+#: C:\wamp\www\blackshow\app\views/events_images/add.html.php:3
+msgid "Subir Imagen de Eventos"
+msgstr "Upload File Events"
+
+#: C:\wamp\www\blackshow\app\views/events_images/add.html.php:10
+#: C:\wamp\www\blackshow\app\views/events_images/view.html.php:4
+msgid "Eventos"
+msgstr "Events"
+
+#: C:\wamp\www\blackshow\app\views/several_images/add.html.php:3
+msgid "Subir Imagen de Varios"
+msgstr "Upload File Others"
+
+#: C:\wamp\www\blackshow\app\views/theatres_images/add.html.php:3
+msgid "Subir Imagen de Teatros"
+msgstr "Upload File Theatres"
+
+#: C:\wamp\www\blackshow\app\views/theatres_images/add.html.php:10
+#: C:\wamp\www\blackshow\app\views/theatres_images/view.html.php:4
+msgid "Teatros"
+msgstr "Theatres"
+
+#~ msgid "prueba"
+#~ msgstr "test"
